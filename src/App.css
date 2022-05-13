@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@500;600;700&display=swap");
+:root {
+  --blue: #2b519c;
+  --dark-blue: #1d3668;
+  --grey: #858585;
+  --yellow: #fbee3c;
+  --green: #1ecc33;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +16,11 @@
 body {
   width: 100%;
   height: 100%;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
