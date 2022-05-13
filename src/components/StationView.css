@@ -1,6 +1,6 @@
 .station-view {
   position: absolute;
-  top: 13%;
+  top: 10%;
   left: 5%;
   width: 90%;
   height: auto;
@@ -29,7 +29,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 4em;
+  padding-bottom: 1em;
 }
 .station-view h3 {
   color: var(--dark-blue);
