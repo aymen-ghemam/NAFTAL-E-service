@@ -5,30 +5,6 @@ import './MapView.css'
 import StationIcon from './StationIcon'
 
 const MapView = (props) => {
-    const [stations, setStations] = useState([
-        {
-            id: 1,
-            stationName: "station1",
-            time: 11,
-            position: [36.701, 3.0575977],
-            status: 'red'
-        },
-        {
-            id: 2,
-            stationName: "station2",
-            time: 22,
-            position: [36.702, 3.0675977],
-            status: 'orange'
-        },
-        {
-            id: 3,
-            stationName: "station3",
-            time: 33,
-            position: [36.703, 3.0775977],
-            status: 'green'
-        }
-    ]);
-
     return (
         <MapContainer center={[36.702, 3.0675977]} zoom={13} scrollWheelZoom={false}>
         <TileLayer
@@ -36,12 +12,12 @@ const MapView = (props) => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <MarkerLayer>
-            {stations.map(station => (
+            {props.stations.map(station => (
                  <Marker
                  key={station.id}   
                  position={station.position}
                 >
-                <StationIcon onClick={props.onClick} status={station.status} />
+                <StationIcon onClick={props.onClick} station={station} />
                 </Marker>
             ))}
 

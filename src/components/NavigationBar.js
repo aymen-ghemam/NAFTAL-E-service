@@ -2,11 +2,11 @@ import React from "react";
 import {Link} from 'react';
 
 import "./NavigationBar.css";
-const NavigationBar = () => {
+const NavigationBar = (props) => {
   return (
     
       <div className="navbar">
-        <a href='#' to={'#'} className="iconContainer">
+        <a href='#' className="iconContainer">
           {/* <MapIcon className="icon" /> */}
           <img className="icon-img" src="../../assets/profil.svg"/>
           <p className="icon-text"> Profil</p>

@@ -1,14 +1,17 @@
+import { useState } from "react";
 import "./App.css";
 import NavigationBar from "./components/NavigationBar";
 import Map from "./pages/Map";
 
 function App() {
 
-  return (
-    <div className="App">
-      <Map/>
-    </div>
-  );
+  const [page, setPage] = useState(2);
+    return (
+        <div className="App">
+          <Map/>
+          <NavigationBar setPage={setPage} page={page} />
+        </div>
+      );
 }
 const stationsList = [ {
   id: 1,

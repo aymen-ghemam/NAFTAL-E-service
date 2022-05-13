@@ -9,7 +9,7 @@ const StationView = (props) => {
             <img src='/assets/station.png' alt='' />
         </div>
         <div className='body'>
-            <h3>Naftal service station</h3>
+            <h3>{props.station.stationName}</h3>
             <h5>Autoroute sud Cheraga</h5>
             <div className='status'>
                 Open
