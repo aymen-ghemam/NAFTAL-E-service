@@ -1,16 +1,12 @@
-import './App.css';
-import MapView from './components/MapView';
-import{Station} from './components/StationsList'; 
-import StationsList from './components/StationsList';
+import "./App.css";
+import NavigationBar from "./components/NavigationBar";
+import Map from "./pages/Map";
+
 function App() {
-
-
 
   return (
     <div className="App">
-    <StationsList  stations={stationsList} />
-     {/* <Station/> */}
-     {/* <MapView /> */}
+      <Map/>
     </div>
   );
 }
