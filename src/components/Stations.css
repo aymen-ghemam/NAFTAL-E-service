@@ -1,45 +1,75 @@
 .station-card {
-  margin: 10px 10px;
-  width: 90%;
+  width: 100%;
   height: 50px;
   border: 1px solid #edede3;
   border-radius: 9px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  color: var(--blue);
 }
 .station-card-first {
-  width: 80%;
-  height: 100%;
-  padding: 20px;
+  width: 70%;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 .station-card-second {
-  width: 20%;
+  width: 30%;
   height: 50px;
-  border: 1px #edede3;
   background: #fbee3c;
-  padding: 20px;
   border-radius: 9px;
+  color: var(--dark-blue);
+  position: relative;
 }
+.station-card-second .triangle {
+  width: 35%;
+  height: 50px;
+  background: linear-gradient(
+    to bottom right,
+    #fff 0%,
+    #fff 50%,
+    #fbee3c 50%,
+    #fbee3c 100%
+  );
+}
+.station-card-second .time {
+  width: 65%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 1em;
+}
+
 .stationsList {
   border: 1px solid #edede3;
-  border-radius: 9px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: white;
   max-height: 100%;
   overflow-y: scroll;
+  padding: 0 1em;
+  padding-bottom: 50px;
 }
 
 .station-container {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  height: calc(40vh);
+  /* max-height: calc(100vh-5vh-50vh-60px); */
   position: absolute;
-  bottom: 50px;
-  z-index: 100;
-  height: 30vh;
-  max-height: 40vh;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+
+  z-index: 200;
+
   transition: height 0.5s linear;
   overflow-y: hidden;
+  padding-bottom: 50px;
 }
 .station-container .toggle {
   width: 60%;
@@ -54,5 +84,5 @@
 }
 
 .hidden {
-  height: 30px;
+  height: 80px;
 }
