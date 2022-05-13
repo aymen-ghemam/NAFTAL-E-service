@@ -1,5 +1,4 @@
 import React from "react";
-import MapIcon from "@mui/icons-material/Map";
 import "./NavigationBar.css";
 const NavigationBar = () => {
   return (
