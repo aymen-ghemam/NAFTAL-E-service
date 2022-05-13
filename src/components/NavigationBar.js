@@ -17,7 +17,7 @@ const NavigationBar = () => {
           <p className="icon-text"> Map</p>
         </div>
 
-        <div className="iconContainer" onClick={() => console.log("helo")}>
+        <div className="iconContainer" >
           {/* <MapIcon className="icon" /> */}
 
           <img className="icon-img"  src="../../assets/payment.svg"/>
