@@ -18,7 +18,7 @@ import './Stations.css'
 
 
 export default  function StationsList(){
-    const [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState(false);
     const stations = [
         {
             id: 1,
