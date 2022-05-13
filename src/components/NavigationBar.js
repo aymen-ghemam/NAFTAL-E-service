@@ -28,7 +28,7 @@ const NavigationBar = (props) => {
         {props.page == 3 ? (
           <img className="icon-img" src="../../assets/storeSelected.svg" />
         ) : (
-          <img className="icon-img" src="../../assets/store.svg" />
+          <img className="icon-img" src="../../assets/Store.svg" />
         )}
         <p className="icon-text"> Store</p>
       </a>
