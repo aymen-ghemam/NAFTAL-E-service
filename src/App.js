@@ -1,10 +1,11 @@
-import './App.css';
-import MapView from './components/MapView';
+import "./App.css";
+import MapView from "./components/MapView";
+import NavigationBar from "./components/NavigationBar";
 
 function App() {
   return (
     <div className="App">
-      <MapView />
+      <NavigationBar />
     </div>
   );
 }
