@@ -10,27 +10,27 @@ const MapView = (props) => {
             id: 1,
             stationName: "station1",
             time: 11,
-            position: [41.505, -0.09],
+            position: [36.701, 3.0575977],
             status: 'red'
         },
         {
             id: 2,
             stationName: "station2",
             time: 22,
-            position: [42.505, -0.09],
+            position: [36.702, 3.0675977],
             status: 'orange'
         },
         {
             id: 3,
             stationName: "station3",
             time: 33,
-            position: [43.505, -0.09],
+            position: [36.703, 3.0775977],
             status: 'green'
         }
     ]);
 
     return (
-        <MapContainer center={[41.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+        <MapContainer center={[36.702, 3.0675977]} zoom={13} scrollWheelZoom={false}>
         <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -40,8 +40,8 @@ const MapView = (props) => {
                  <Marker
                  key={station.id}   
                  position={station.position}
-        >
-                <StationIcon status={station.status} />
+                >
+                <StationIcon onClick={props.onClick} status={station.status} />
                 </Marker>
             ))}
 

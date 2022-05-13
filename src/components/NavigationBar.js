@@ -1,9 +1,6 @@
 import React from "react";
-<<<<<<< HEAD
-=======
 import {Link} from 'react';
 
->>>>>>> 675253896143c2167918cce583ef79b25ba61726
 import "./NavigationBar.css";
 const NavigationBar = () => {
   return (
