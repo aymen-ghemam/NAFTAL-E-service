@@ -1,4 +1,5 @@
 import React from "react";
+import CreditHeader from "../components/CreditHeader";
 import Header from "../components/Header";
 import NavigationBar from "../components/NavigationBar";
 import "./PaymentPage.css";
@@ -6,7 +7,7 @@ import "./PaymentPage.css";
 const PaymentPage = () => {
   return (
     <div className="container">
-      <Header />
+      <CreditHeader />
       <table className="commandeTotal">
         <thead>
           {" "}
@@ -14,8 +15,10 @@ const PaymentPage = () => {
           <th>Total</th>
         </thead>
         <tbody>
-          <td>42342</td>
-          <td>2000.00DZD</td>
+          <tr>
+            <td>42342</td>
+            <td>2000.00DZD</td>
+          </tr>
         </tbody>
       </table>
       <form>
