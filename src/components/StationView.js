@@ -1,9 +1,10 @@
 import React from 'react'
 import './StationView.css'
 
-const StationView = () => {
+const StationView = (props) => {
   return (
-    <div className='station-view'>
+    <div className='wrapper' onClick={props.onClick}>
+        <div className='station-view' onClick={e=>{e.stopPropagation()}}>
         <div className='header'>
             <img src='/assets/station.png' alt='' />
         </div>
@@ -15,6 +16,7 @@ const StationView = () => {
             </div>        
             <a className='navigate' href='#'>Navigate</a>
         </div>
+    </div>
     </div>
   )
 }

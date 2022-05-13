@@ -4,10 +4,15 @@ import StationView from '../components/StationView'
 import StationsList from '../components/StationsList'
 
 const Map = (page) => {
+    const [toggleStationView, setToggleStationView] = useState(false);
+    const toggle = (id)=>{
+        setToggleStationView(!toggleStationView);
+    }
   return (
     <div className='map'>
-        <MapView />
-        <StationView/>
+        <MapView onClick = {toggle} />
+
+        {toggleStationView?<StationView onClick={toggle} />: ''}  
         <StationsList />
     </div>
   )

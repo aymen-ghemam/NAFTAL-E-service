@@ -8,7 +8,10 @@ import './Stations.css'
             <div className="station-card-first" >
                 station {stationName}
             </div> 
-            <div className="station-card-second">{time}</div>
+            <div className="station-card-second">
+                <div className='triangle'></div>
+                <div className='time'>{time}</div>
+            </div>
         </div>
     ) 
 }; 
