@@ -6,30 +6,15 @@ import Map from "./pages/Map";
 function App() {
 
   const [page, setPage] = useState(2);
-    return (
-        <div className="App">
-          <Map/>
-          <NavigationBar setPage={setPage} page={page} />
-        </div>
-      );
+
+  return (
+    <div className="App">
+      {page === 2 && <Map />}
+      {page === 3 && <Store />}
+      <NavigationBar page={page} setPage={setPage} />
+    </div>
+  );
 }
-const stationsList = [ {
-  id: 1,
-  stationName: "station1", 
-  time:11
-},
-{
-  id: 2,
-  stationName: "station2",  
-  time:22
-  }, 
-
-  {
-  id: 3,
-  stationName: "station3",
-  time:33},
-
-]
 
 
 export default App;
